@@ -113,7 +113,18 @@ form input{
 /* .content ul li > * {
   flex-shrink: 0;
 } */
-
+.editInput{
+  min-width: 60%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 
 .btns{
   display: flex;
@@ -121,3 +132,8 @@ form input{
   gap: 15px;
 }
 
+.btns :where(.edit, .delete, .save){
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
